@@ -6,6 +6,7 @@
 import React, { useState, useEffect } from 'react';
 import { Slide1, Slide2, Slide3, Slide4, Slide5, Slide6, Slide7, Slide8, Slide9 } from './slides';
 import { ArrowUp } from 'lucide-react';
+import logoImg from './assets/logo.png';
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -47,7 +48,7 @@ export default function App() {
       >
         <div className="flex items-center justify-center pointer-events-auto">
           <img 
-            src="/logo.png" 
+            src={logoImg} 
             alt="Logo" 
             className="h-6 md:h-8 object-contain opacity-90"
           />
